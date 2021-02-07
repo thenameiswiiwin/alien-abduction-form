@@ -2,8 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/forms.css" />
 		<title>Alien Abduction Order Form</title>
-		<link href="css/forms.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div class="wrapper">
@@ -14,8 +16,8 @@
 					one of our fine UFOs.
 				</p>
 				<form
-					action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SE"
 					method="POST"
+					action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES"
 				>
 					<input type="hidden" name="send_to" value="huyn.nguyen95@gmail.com" />
 					<!-- Fieldset 1 -->
@@ -43,7 +45,6 @@
 						<legend>About your abduction</legend>
 						<label for="date">Request date</label>
 						<input type="date" name="date" id="date" />
-						<label for=""></label>
 						<label for="qty">How many people would you like abducted?</label>
 						<input type="number" name="qty" id="qty" min="1" max="10" />
 						<p>What type of UFO do you prefer?</p>
