@@ -46,7 +46,7 @@
 						<label for="date">Request date</label>
 						<input type="date" name="date" id="date" />
 						<label for="qty">How many people would you like abducted?</label>
-						<input type="number" name="qty" id="qty" min="1" max="10" />
+						<input type="number" id="qty" name="qty" min="1" max="10" />
 						<p>What type of UFO do you prefer?</p>
 						<label>
 							<input type="radio" name="ufotype" value="classic" checked />
@@ -78,9 +78,8 @@
 						<textarea
 							name="comments"
 							id="comments"
-							cols="42"
-							rows="6"
 							placeholder="Write request here..."
+							maxlength="280"
 						></textarea>
 						<label>
 							<input type="checkbox" name="subscribe" value="subscribe" />
